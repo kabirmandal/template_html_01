@@ -1,0 +1,71 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.navbar-light .navbar-nav .active .nav-link,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #00b894;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-size: large;
+    color: white;
+}
+.carousel-item{
+    height : 80vh;
+    filter: brightness(60%) grayscale(30%);
+}
+
+.carousel-item img{
+    transform: translateY(-20%);
+}
+
+#SlideText{
+    position: absolute;  
+    top:0;
+    width: 100%;
+    margin-top: 15%;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+#SlideText h1{
+    font-size : 55px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 5px black;
+}
+#SlideText a {
+    padding : 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+#SlideText .btnlogin{
+    background-color: #fff;
+    color: #000; transition: all .5s ease;
+}
+#SlideText .btnsignup{
+    background-color: #00b894;
+    color: white;
+   
+}
+
+#SlideText .btnlogin:hover{
+    background-color: #00b894;
+    color: white;
+}
+#SlideText .btnsignup:hover{
+    background-color: #fff;
+    color: #000;
+}
+.navbar-light .nav-link{
+    color: #00b894;
+}
