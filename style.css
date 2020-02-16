@@ -1,71 +1,230 @@
-*{
-    font-family: 'Josefin Sans', sans-serif;
+* {
+  font-family: "Josefin Sans", sans-serif;
 }
-.navbar{
-    background-color: rgba(0, 0, 0, 0.185);
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.185);
 }
+
 .navbar-light .navbar-nav .active .nav-link,
-.navbar-light .navbar-nav .nav-link:hover{
-    color: #00b894;
-}
-.navbar-light .navbar-nav .nav-link{
-    font-size: large;
-    color: white;
-}
-.carousel-item{
-    height : 80vh;
-    filter: brightness(60%) grayscale(30%);
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00b894;
 }
 
-.carousel-item img{
-    transform: translateY(-20%);
+.navbar-light .navbar-nav .nav-link {
+  font-size: large;
+  color: white;
 }
 
-#SlideText{
-    position: absolute;  
-    top:0;
-    width: 100%;
-    margin-top: 15%;  
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:white;
+.carousel-item {
+  height: 80vh;
+  filter: brightness(60%) grayscale(30%);
 }
-#SlideText h1{
-    font-size : 55px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-shadow: 2px 1px 5px black;
+
+.carousel-item img {
+  transform: translateY(-20%);
 }
+
+#SlideText {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 15%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#SlideText h1 {
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-shadow: 2px 1px 5px black;
+}
+
 #SlideText a {
-    padding : 12px 30px;
-    border-radius: 4px;
-    outline: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all .5s ease;
-}
-#SlideText .btnlogin{
-    background-color: #fff;
-    color: #000; transition: all .5s ease;
-}
-#SlideText .btnsignup{
-    background-color: #00b894;
-    color: white;
-   
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
 }
 
-#SlideText .btnlogin:hover{
-    background-color: #00b894;
-    color: white;
+#SlideText .btnlogin {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.5s ease;
 }
-#SlideText .btnsignup:hover{
-    background-color: #fff;
-    color: #000;
+
+#SlideText .btnsignup {
+  background-color: #00b894;
+  color: white;
 }
-.navbar-light .nav-link{
-    color: #00b894;
+
+#SlideText .btnlogin:hover {
+  background-color: #00b894;
+  color: white;
+}
+
+#SlideText .btnsignup:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-light .nav-link {
+  color: #00b894;
+}
+
+/* Price Section */
+section.pricing {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+}
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+/* Service & Feature */
+.sec-pad {
+  padding: 115px 0 120px;
+}
+.thm-container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.about-section .title {
+    margin-bottom: 12px;
+}
+.about-section .title h2 {
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #2D2D2D;
+    font-family: 'Roboto';
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.about-section .single-about-box {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    display: block;
+    -webkit-box-shadow: 0px 0px 6px rgba(45, 45, 45, 0.2);
+    box-shadow: 0px 0px 6px rgba(45, 45, 45, 0.2);
+}
+.hvr-bounce-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+.about-section .single-about-box .icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    margin-top: -30px;
+    -webkit-box-shadow: 0px 0px 6px rgba(79, 90, 230, 0.32);
+    box-shadow: 0px 0px 6px rgba(79, 90, 230, 0.32);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.about-section .single-about-box h3 {
+    text-transform: uppercase;
+    color: #2D2D2D;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.hvr-bounce-to-bottom:active, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:hover {
+    color: #fff;
+}
+#minimal-bootstrap-carousel.slider-home-one .carousel-inner .item, .tools-section, .brand-section, .process-section, .contact .contact-form .btn-contact:hover, .testimonial-section .testimonial-carousel.owl-theme .owl-dots .owl-dot.active span, .about-section .single-about-box:before {
+    background: linear-gradient(to right, #6c5ce7 0%, #6c5ce7 28%, #02CAFC 100%);
+}
+.statics-section .single-statics .icon-box i, .about-section .single-about-box .icon-box i, .pricing-section .single-pricing .percent span, .blog-post .single-blog .part-text a.read-more, .blog-post .single-blog .part-text h3 a:hover, .process-section .single-process .icon-box i, .footer .footer-top .footer-right .footer-social a:hover, .statics-section .single-statics .text-box span {
+    color: #6c5ce7 !important;
+}
+.about-section .single-about-box .icon-box i {
+    font-size: 35px;
+    color: #5F69EB;
+    line-height: 60px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
 }
