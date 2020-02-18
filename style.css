@@ -265,6 +265,7 @@ section.pricing {
   position: relative;
   align-content: space-between;
   float: right;
+  border: unset !important;
 }
 
 ul {
